@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODERWANDA Ltd | Digital Solutions</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f8fc;color:#17243a}
+header{height:80px;padding:0 8%;display:flex;align-items:center;
+justify-content:space-between;background:white;box-shadow:0 2px 12px #0000000d}
+.logo{font-size:23px;font-weight:800;color:#123d70}
+.logo span{color:#1596d2}
+nav{display:flex;gap:28px;align-items:center}
+nav a{text-decoration:none;color:#33445c;font-weight:600}
+nav a:hover{color:#1596d2}
+nav .nav-btn{background:#1264a3;color:white;padding:12px 20px;border-radius:7px}
+.hero{min-height:510px;padding:90px 9%;display:flex;align-items:center;
+background:linear-gradient(120deg,#092e55,#1264a3);color:white}
+.hero-content{max-width:680px}
+.tag{color:#76d3ff;font-weight:bold;letter-spacing:2px;font-size:13px}
+.hero h1{font-size:53px;line-height:1.15;margin:22px 0}
+.hero p{font-size:17px;line-height:1.8;color:#dceafa;max-width:590px}
+.buttons{margin-top:30px;display:flex;gap:15px;flex-wrap:wrap}
+.btn{padding:15px 25px;border-radius:7px;text-decoration:none;
+font-weight:bold;display:inline-block}
+.primary{background:#20a6df;color:white}
+.secondary{border:1px solid white;color:white}
+.features{padding:75px 8%;text-align:center}
+.features h2{font-size:32px;margin-bottom:12px;color:#123d70}
+.subtitle{color:#68788e;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}
+.card{background:white;padding:32px 25px;border-radius:12px;
+box-shadow:0 5px 25px #183b5b0d;text-align:left}
+.card .icon{font-size:30px;margin-bottom:20px}
+.card h3{color:#123d70;margin-bottom:12px}
+.card p{color:#68788e;line-height:1.7;font-size:14px}
+.cta{margin:10px 8% 75px;background:#e4f3fc;padding:45px;
+border-radius:14px;text-align:center}
+.cta h2{color:#123d70;margin-bottom:12px}
+.cta a{display:inline-block;margin-top:20px;background:#1264a3;color:white;
+padding:13px 24px;text-decoration:none;border-radius:7px}
+footer{background:#092e55;color:#dceafa;padding:30px 8%;text-align:center}
+@media(max-width:750px){
+header{height:auto;padding:22px 5%;gap:18px;flex-direction:column}
+nav{gap:15px;flex-wrap:wrap;justify-content:center}
+.hero{padding:75px 7%}
+.hero h1{font-size:38px}
+.cards{grid-template-columns:1fr}
+.cta{margin-left:5%;margin-right:5%}
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="logo">CODER<span>WANDA</span> Ltd.</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html" class="nav-btn">Get Started</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="tag">WELCOME TO CODERWANDA LTD</div>
+        <h1>Technology That Connects Your Future.</h1>
+        <p>
+            Discover a smarter digital experience. Access information,
+            create your account and enjoy a simple and convenient
+            web platform designed for everyone.
+        </p>
+        <div class="buttons">
+            <a href="registration.html" class="btn primary">Create Account →</a>
+            <a href="login.html" class="btn secondary">Login to Account</a>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="services">
+    <h2>Explore Our Platform</h2>
+    <p class="subtitle">Simple, convenient and accessible digital services.</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">👤</div>
+            <h3>Easy Registration</h3>
+            <p>Create your account quickly and become part of our digital platform.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h3>Secure Access</h3>
+            <p>Access your account through a simple and user-friendly login interface.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Online Access</h3>
+            <p>Explore application information through your preferred web browser.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p class="subtitle">Join CODERWANDA Ltd and experience our web platform.</p>
+    <a href="registration.html">Register Now →</a>
+</section>
+
+<footer>
+    <p>© 2026 CODERWANDA Ltd. All Rights Reserved.</p>
+    <p style="margin-top:10px;font-size:13px">Innovative Digital Solutions</p>
+</footer>
+</body>
+</html>

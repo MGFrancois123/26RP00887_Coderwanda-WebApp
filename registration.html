@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration | CODERWANDA Ltd</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{min-height:100vh;background:linear-gradient(135deg,#092e55,#147bb5);
+display:flex;justify-content:center;align-items:center;padding:25px}
+.register-card{background:white;width:100%;max-width:490px;padding:38px;
+border-radius:15px;box-shadow:0 15px 45px #001b383d}
+.logo{text-align:center;color:#1264a3;font-size:24px;font-weight:800}
+.logo span{color:#1596d2}
+h2{text-align:center;color:#17395e;margin-top:22px;font-size:27px}
+.subtitle{text-align:center;color:#7a8797;margin:10px 0 25px;font-size:14px}
+label{display:block;font-weight:600;color:#34475d;margin:14px 0 8px;font-size:14px}
+input{width:100%;padding:13px;border:1px solid #d7e0e9;border-radius:7px;
+outline:none;font-size:14px}
+input:focus{border-color:#1596d2;box-shadow:0 0 0 3px #1596d21a}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+button{width:100%;margin-top:23px;padding:15px;border:0;border-radius:7px;
+background:#1264a3;color:white;font-weight:bold;font-size:16px;cursor:pointer}
+button:hover{background:#092e55}
+.bottom{text-align:center;margin-top:22px;color:#758397;font-size:14px}
+a{color:#1264a3;text-decoration:none;font-weight:bold}
+.home{text-align:center;margin-top:18px}
+@media(max-width:480px){.row{grid-template-columns:1fr}.register-card{padding:25px}}
+</style>
+</head>
+<body>
+
+<div class="register-card">
+    <div class="logo">CODER<span>WANDA</span> Ltd.</div>
+
+    <h2>Create Your Account</h2>
+    <p class="subtitle">Join our platform and get started today.</p>
+
+    <form id="registerForm">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <div class="row">
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create password" minlength="6" required>
+            </div>
+            <div>
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" placeholder="Confirm password" minlength="6" required>
+            </div>
+        </div>
+
+        <button type="submit">Create Account →</button>
+    </form>
+
+    <div class="bottom">
+        Already have an account? <a href="login.html">Login here</a>
+    </div>
+
+    <div class="home">
+        <a href="index.html">← Back to Home</a>
+    </div>
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit",function(e){
+    e.preventDefault();
+
+    const password=document.getElementById("password").value;
+    const confirm=document.getElementById("confirm").value;
+
+    if(password!==confirm){
+        alert("Passwords do not match!");
+        return;
+    }
+
+    alert("Demo only: Connect a backend to register and save users.");
+});
+</script>
+</body>
+</html>
