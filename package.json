@@ -1,0 +1,11 @@
+
+{
+  "name": "coderwanda-webapp",
+  "version": "1.0.0",
+  "description": "CODERWANDA Web Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
